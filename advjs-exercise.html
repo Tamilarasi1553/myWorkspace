@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+</head>
+
+<body>
+
+
+    <script>
+        console.log("***1***")
+        let sum = ((a, b) => {
+            let c = a + b;
+            return c;
+        });
+
+        let res = sum(40, 50);
+
+        console.log("Result", res);
+
+
+
+        console.log("***2***")
+        let arr = [5, 6, 7, 8, 9];
+
+        let res_arr = arr.map((num) => num ** 2);
+
+        console.log(res_arr);
+
+
+
+        console.log("***3***")
+
+        let farr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15];
+
+        let even_arr = farr.filter((f) => f % 2 == 0);
+
+        console.log(even_arr);
+
+
+
+
+        console.log("***4***")
+        let person = [{
+            name: "Praveen",
+            age: 25,
+            gender: "Male"
+        },
+        {
+            name: "Kevin",
+            age: 6,
+            gender: "Male",
+        },
+        {
+            name: "Hency",
+            age: 5,
+            gender: "Female",
+        },
+        {
+            name: "Tamilarasi",
+            age: 25,
+            gender: "Female",
+        },
+        ];
+
+        let persons = person.filter(item => item.age >= 18)
+            .map(item => item.name);
+        console.log(persons);
+
+        const names = person.filter((persons) => persons.gender == "Male").map(item => item.name)
+        console.log(names);
+
+    </script>
+</body>
+
+</html>
